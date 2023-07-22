@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { translateText } from "../../services/translate";
 
 function TranslationForm() {
-    const [text, setText] = useState("");
-    const [translation, setTranslation] = useState("");
+    const [text, setText] = useState();
+    const [translation, setTranslation] = useState();
 
     const handleTranslate = async (event) => {
         event.preventDefault();
